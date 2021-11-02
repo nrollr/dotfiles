@@ -1,0 +1,103 @@
+## taps
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/services"
+
+## binaries
+brew "awscli"
+brew "netlify-cli"
+brew "tree"
+brew "svn" #required for Google Fonts
+
+## development
+brew "composer"
+brew "yarn"
+brew "php@7.4", restart_service: true
+brew "mysql", restart_service: true
+brew "nginx", restart_service: true
+brew "node"
+## optional (on demand)
+# brew "node@12"
+
+## temporary disabled
+# brew "mas" //https://github.com/mas-cli/mas/issues/164
+
+## apps
+cask "1password"
+cask "abstract"
+cask "adobe-creative-cloud"
+cask "appcleaner"
+cask "dropbox"
+cask "fig"
+cask "figma"
+cask "firefox"
+cask "github"
+cask "google-chrome"
+cask "hiddenbar"
+cask "imageoptim"
+cask "kaleidoscope"
+cask "little-snitch"
+cask "messenger"
+cask "pdf-expert"
+cask "postman"
+cask "ray"
+cask "rightfont"
+cask "simplenote"
+cask "sketch"
+cask "slack"
+cask "spotify"
+cask "sublime-text"
+cask "superduper"
+cask "tableplus"
+cask "the-unarchiver"
+cask "topnotch"
+cask "transmission"
+cask "transmit"
+cask "tweetbot"
+cask "visual-studio-code"
+cask "vmware-fusion"
+
+## optional
+# cask "iconjar"
+# cask "iina"
+# cask "mactracker"
+# cask "sizzy"
+# cask "teamviewer"
+
+
+## fonts
+cask "font-cascadia-code"
+cask "font-cascadia-mono"
+cask "font-hack"
+cask "font-inter"
+cask "font-jetbrains-mono"
+cask "font-lato"
+cask "font-merriweather"
+cask "font-new-york"
+cask "font-open-sans"
+cask "font-pt-sans"
+cask "font-pt-serif"
+cask "font-roboto"
+cask "font-sf-compact"
+cask "font-sf-mono"
+cask "font-sf-pro"
+cask "font-source-code-pro"
+cask "font-source-sans-pro"
+cask "font-source-serif-pro"
+cask "font-ubuntu"
+
+## temporary disabled, see line 22
+## required installs via Mac App Store
+# mas "Contrast", id: 1254981365
+# mas "Darkroom", id: 953286746
+# mas "Magnet", id: 441258766
+# mas "Peek", id: 1554235898
+# mas "Pixave", id: 924891282
+# mas "Pixelmator Pro", id: 1289583905
+# mas "Reeder", id: 1529448980
+# mas "Spark", id: 1176895641
+# mas "Textastic", id: 572491815
+# mas "Todoist", id: 585829637
+
+## optional installs via Mac App Store
+# mac "Menu Bar Controller for Sono", id: 1357379892

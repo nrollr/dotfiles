@@ -69,6 +69,10 @@ sudo pmset -a standbydelay 86400
 sudo systemsetup -setcomputersleep Off > /dev/null
 # Power Management: disable hibernation (speeds up entering sleep mode)
 sudo pmset -a hibernatemode 0
+# Power Management: disable wake for network access
+sudo pmset -a womp 0
+# Power Management: disable put hard disks ti sleep when possible
+sudo pmset -a disksleep 0
 
 # Security & Privacy: require password immediately after sleep
 defaults write com.apple.screensaver askForPassword -int 1
@@ -196,7 +200,6 @@ for app in "Activity Monitor" \
     "Photos" \
     "Safari" \
     "SystemUIServer" \
-    "Terminal" \
     "Transmission"; do
     killall "${app}" &> /dev/null
 done

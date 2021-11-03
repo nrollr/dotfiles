@@ -21,3 +21,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 rm ~/.zshrc
 ln -s ~/.dotfiles/shell/default.zshrc ~/.zshrc
+
+open ~/.dotfiles/shell/nord.terminal
+defaults write com.apple.terminal "Default Window Settings" "nord.terminal"

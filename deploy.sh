@@ -18,4 +18,6 @@ echo "Github repositories cloned!"
 echo "Installing Oh My Zsh"
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+rm ~/.zshrc
 ln -s ~/.dotfiles/shell/default.zshrc ~/.zshrc

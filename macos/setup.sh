@@ -58,15 +58,10 @@ defaults write NSGlobalDomain AppleLocale -string "en_US@currency=EUR"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
-# Date & Time: set the timezone
-sudo systemsetup -settimezone "Europe/Brussels" > /dev/null
-
 # Power Management: sleep the display after 3 hours
 sudo pmset -a displaysleep 180
 # Power Management: set standby delay to 24 hours
 sudo pmset -a standbydelay 86400
-# Power Management: never go into computer sleep mode
-sudo systemsetup -setcomputersleep Off > /dev/null
 # Power Management: disable hibernation (speeds up entering sleep mode)
 sudo pmset -a hibernatemode 0
 # Power Management: disable wake for network access
@@ -151,8 +146,6 @@ defaults write com.apple.terminal StringEncodings -array 4
 
 # Time Machine: prevent from prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-# Time Machine: disable local snapshots
-sudo tmutil disablelocal
 
 # Activity Monitor: show the main window when launching Activity Monitor
 defaults write com.apple.ActivityMonitor OpenMainWindow -bool true

@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Install all brew packages with bundle
+echo "Installing brew packages"
+
+brew tap homebrew/bundle
+brew bundle --file=$HOME/.dotfiles/homebrew/brewfile
+echo "Packages installed!"
+
 # Install Oh My Zsh
 echo "Installing Oh My Zsh"
 
@@ -10,13 +17,6 @@ exit
 # Symlink the .zshrc file from .dotfiles/shell
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/shell/default.zshrc $HOME/.zshrc
-
-# Install all brew packages with bundle
-echo "Installing brew packages"
-
-brew tap homebrew/bundle
-brew bundle --file=$HOME/.dotfiles/homebrew/brewfile
-echo "Packages installed!"
 
 # Symlink Terminal profile from .dotfiles/shell
 rm -rf $HOME/Library/Preferences/com.apple.Terminal.plist

@@ -30,4 +30,4 @@ echo "Github repositories cloned!"
 
 
 # Set macOS preferences
-source $HOME/.dotfiles/macos/setup.sh
+# source $HOME/.dotfiles/macos/setup.sh

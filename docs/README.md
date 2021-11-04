@@ -115,11 +115,6 @@ A detailed list of applications which are installed on a vanilla macOS device.
 - install command: `brew install --cask sublime-text`
 - **note**: requires license or subscription
 
-#### SuperDuper
-- app website: [shirt-pocket.com](https://www.shirt-pocket.com/SuperDuper)
-- install command: `brew install --cask superduper`
-- **note**: requires license or subscription
-
 #### TablePlus
 - app website: [tableplus.com](https://tableplus.com)
 - install command: `brew install --cask tableplus`

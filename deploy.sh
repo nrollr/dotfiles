@@ -5,6 +5,7 @@ echo "Installing Oh My Zsh"
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo "Oh My Zsh installed!"
+exit
 
 # Symlink the .zshrc file from .dotfiles/shell
 rm -rf $HOME/.zshrc

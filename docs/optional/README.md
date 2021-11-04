@@ -28,6 +28,10 @@ These application are not frequently used, therefor are not included in the _`de
 - app website: [teamviewer.com](https://www.teamviewer.com/en-us)
 - install command: `brew install --cask teamviewer`
 
+#### SuperDuper
+- app website: [shirt-pocket.com](https://www.shirt-pocket.com/SuperDuper)
+- install command: `brew install --cask superduper`
+- **note**: requires license or subscription
 
 <br><br>
 
